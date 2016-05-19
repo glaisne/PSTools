@@ -19,7 +19,6 @@ Get-ScheduledTask.ps1
 Get-TimeZone.ps1
 Get-UserProfile.ps1
 Get-WebCertificateExpirationDate.ps1
-InstallModule.ps1
 PSTools.psm1
 Test-FileLock.ps1
 Test-IsAdministrator.ps1
