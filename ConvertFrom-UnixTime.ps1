@@ -1,7 +1,15 @@
 function ConvertFrom-UnixTime {
 <#
 .Synopsis
-Converts a Unix time into a datetime object.
+   Converts a Unix time into a datetime object.
+.DESCRIPTION
+   Converts a Unix time into a datetime object.
+.EXAMPLE
+   This example converts a Unix Time (int) to standard DateTime object.
+
+   ConvertFrom-UnixTime 1000000000
+.Link
+   http://github.com/glaisne/pstools
 #>
   param(
       [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
