@@ -11,8 +11,6 @@ $filelist = @"
 ConvertFrom-UnixTime.ps1
 Convert-IPToBinary.ps1
 Get-DNSHostName.ps1
-Get-Event4624Details.ps1
-Get-Event5140Details.ps1
 Get-IPAddress.ps1
 Get-MD5Hash.ps1
 Get-ScheduledTask.ps1
