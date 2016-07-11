@@ -13,7 +13,7 @@
     {
         return $null
     }
-    <#
+
     [string] $Result = ([string]::Empty)
 
     foreach ($Entry in $List)
@@ -23,13 +23,14 @@
     $Result = $Result.TrimEnd("$Delimiter ")
 
     Write-Output $Result
-    #>
 
+    <#
     $OldOFS = $OFS
-    $OFS = ', '
+    $OFS = "$Delimiter "
     [string]$List
     $OFS = $OldOFS
 
     Remove-Variable OldOFS -ErrorAction SilentlyContinue
+    #>
 
 }

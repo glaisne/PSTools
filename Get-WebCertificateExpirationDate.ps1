@@ -69,5 +69,3 @@
     {
     }
 }
-
-@("www.gmail.com", "www.outlook.com") | Get-WebCertificateExpirationDate | ft computerName,HasCertificate,ExpirationDate,DaysRemaining -auto
