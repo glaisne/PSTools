@@ -1,6 +1,7 @@
 ﻿
 . $PSScriptRoot\ConvertFrom-UnixTime.ps1
 . $PSScriptRoot\Convert-IPToBinary.ps1
+. $PSScriptRoot\Get-ClosestDayOfWeek.ps1
 . $PSScriptRoot\Get-DNSHostName.ps1
 . $PSScriptRoot\Get-Event4624Details.ps1
 . $PSScriptRoot\Get-Event5140Details.ps1
