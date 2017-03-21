@@ -25,6 +25,7 @@ Test-Port.ps1
 Test-SystemResponseTime.ps1
 Write-AsCSV.ps1
 ZipFiles.ps1
+Out-Speech.ps1
 "@
 
 $filelist -split "`n" | % { Copy-Item -Verbose -Path "$pwd\$($_.trim())" -Destination "$($TargetPath)\$($_.trim())" }

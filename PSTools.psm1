@@ -17,3 +17,6 @@
 . $PSScriptRoot\Test-SystemResponseTime.ps1
 . $PSScriptRoot\Write-AsCSV.ps1
 . $PSScriptRoot\ZipFiles.ps1
+. $PSScriptRoot\Out-Speech.ps1
+
+Add-Type -AssemblyName System.speech
