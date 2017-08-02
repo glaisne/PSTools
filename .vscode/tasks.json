@@ -1,0 +1,35 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "isShellCommand": true,
+    "showOutput": "always",
+    "tasks":[
+        {
+            "taskName": "Copy to test machine",
+            "command" : "powershell",
+            "isBuildCommand": true,
+            "windows":{
+                "command": "powershell.exe"
+            },
+            "args" : [
+                "-noprofile",
+                "-command",
+                ".\\.vscode\\UpdateScriptOnTestMachine.ps1 -SourceFile 'C:\\Users\\GLaisne\\OneDrive - Carbonite\\PowerShell\\Carbonite\\ProjectScripts\\ManagedReboot\\ManagedReboot.ps1' -ComputerName '172.30.7.13' -TargetPath 'c$\\Users\\Administrator\\desktop' -Verbose; write-host 'done'"
+            ],
+            "suppressTaskName": false
+        },
+        {
+            "taskName": "Run script remotely",
+            "command" : "powershell",
+            "windows" :{
+                "command" : "powershell.exe"
+            },
+            "args" : [
+                "-noprofile",
+                "-command",
+                "Invoke-Command -ComputerName WIN-UM4FUBJ88UG -Command {c:\\users\\administrator\\desktop\\New-SystemValidationScript.ps1; write-host 'done'} -Credential $([pscredential]::new('Administrator', $(ConvertTo-SecureString -String 'Password!101' -AsPlainText -Force)))"
+            ]
+        }
+    ]
+}
