@@ -1,4 +1,4 @@
-function Set-Clean () {
+function Get-Clear () {
 
     $error.Clear()
     [gc]::Collect()
