@@ -1,4 +1,5 @@
 ﻿
+. $PsScriptRoot\ConvertFrom-SecureString.ps1
 . $PSScriptRoot\ConvertFrom-UnixTime.ps1
 . $PSScriptRoot\Convert-IPToBinary.ps1
 . $PSScriptRoot\Get-ClosestDayOfWeek.ps1

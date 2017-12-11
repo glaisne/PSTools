@@ -8,6 +8,7 @@ if(-Not(Test-Path $TargetPath))
 }
 
 $filelist = @"
+ConvertFrom-SecureString.ps1
 ConvertFrom-UnixTime.ps1
 Convert-IPToBinary.ps1
 Get-Clear.ps1
