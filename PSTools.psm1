@@ -3,6 +3,7 @@
 . $PSScriptRoot\Convert-IPToBinary.ps1
 . $PSScriptRoot\Get-ClosestDayOfWeek.ps1
 . $PSScriptRoot\Get-DNSHostName.ps1
+. $PSScriptRoot\Get-EntryFromcollectionByProperty.ps1
 . $PSScriptRoot\Get-IPAddress.ps1
 . $PSScriptRoot\Get-MD5Hash.ps1
 . $PSScriptRoot\Get-ScheduledTask.ps1

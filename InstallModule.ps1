@@ -13,6 +13,7 @@ Convert-IPToBinary.ps1
 Get-Clear.ps1
 Get-ClosestDayOfWeek.ps1
 Get-DNSHostName.ps1
+Get-EntryFromcollectionByProperty.ps1
 Get-IPAddress.ps1
 Get-MD5Hash.ps1
 Get-PizzaOrderCount.ps1
