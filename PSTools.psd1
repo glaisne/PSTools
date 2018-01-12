@@ -4,7 +4,7 @@
 RootModule = 'PSTools.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.1.0'
+ModuleVersion = '0.5.0'
 
 # ID used to uniquely identify this module
 GUID = 'fc3a11c4-ca7b-4085-9934-872ab72255fe'
@@ -22,7 +22,7 @@ Copyright = '(c) 2016 All rights reserved.'
 Description = "PowerShell module of functions for general PowerShell."
 
 # Minimum version of the Windows PowerShell engine required by this module
-PowerShellVersion = '2.0'
+PowerShellVersion = '2.0.1'
 
 # Name of the Windows PowerShell host required by this module
 # PowerShellHostName = ''
