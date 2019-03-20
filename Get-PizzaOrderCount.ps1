@@ -25,4 +25,3 @@ function get-PizzaOrderCount
 	[int] $(1 + (3 * ($GuestCount / 8)))
 
 }
-get-PizzaOrderCount  -GuestCount 20

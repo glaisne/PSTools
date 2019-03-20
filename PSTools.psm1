@@ -18,5 +18,6 @@
 . $PSScriptRoot\Write-AsCSV.ps1
 . $PSScriptRoot\ZipFiles.ps1
 . $PSScriptRoot\Out-Speech.ps1
+. $PSScriptRoot\Show-ExceptionType.ps1
 
 Add-Type -AssemblyName System.speech
