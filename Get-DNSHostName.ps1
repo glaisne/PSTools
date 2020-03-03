@@ -40,10 +40,17 @@ function Get-DNSHostName
     {
         foreach ($IP in $IPAddress)
         {
-		    $Entry = new-object PSObject -Property @{
-		        IPAddress = $IP
-		        Hostname  = $([System.Net.Dns]::GetHostEntry($IP).hostname)
-		    }
+			try
+			{
+				$Entry = new-object PSObject -Property @{
+					IPAddress = $IP
+					Hostname  = $([System.Net.Dns]::GetHostEntry($IP).hostname)
+				}
+			}
+			catch
+			{
+				
+			}
             Write-output $Entry
         }
 	}
